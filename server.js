@@ -56,6 +56,13 @@ res.render('about.hbs',{
 });
 });
 
+
+app.get('/projects', (req,res) =>{
+  res.render('projects.hbs',{
+    pageTitle:'Projects'
+  });
+});
+
 //Bad- Send back Jason with Error Message!
 
 app.get('/BadPage',(req,res)=> {
